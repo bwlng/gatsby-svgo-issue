@@ -1,0 +1,17 @@
+ul li {
+  position: relative;
+  list-style: none;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(-1.5em - 2px);
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23479EBC%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: block;
+}
